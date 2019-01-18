@@ -18,6 +18,7 @@
 
     <requiredpackages>
         <requiredpackage minversion="3.1.7">com.woltlab.wcf</requiredpackage>
+        <requiredpackage minversion="3.1.5">com.woltlab.wcf.moderatedUserGroup</requiredpackage>
     </requiredpackages>
 	
 	<excludedpackages>
@@ -32,7 +33,7 @@
 		<instruction type="template" />
 		
 		<!-- language -->
-        <!-- <instruction type="language"/> -->
+        <instruction type="language"/>
 		
 		<!-- listener -->
         <instruction type="eventListener" />

@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/eventListener.xsd">
     <import>
-			<eventlistener name="moderatedUserGroupListPageListener">
-				<eventclassname>wcf\page\ModeratedUserGroupListPage</eventclassname>
-				<eventname>afterInitObjectList</eventname>
-				<environment>user</environment>
-				<inherit>1</inherit>
-				<listenerclassname>wcf\system\event\listener\HaModeratedUserGroupListPageListener</listenerclassname>
-			</eventlistener>
-			<eventlistener name="userGroupManageMemberListPageListener">
-				<eventclassname>wcf\page\UserGroupManageMemberListPage</eventclassname>
-				<eventname>afterInitObjectList</eventname>
-				<environment>user</environment>
-				<inherit>1</inherit>
-				<listenerclassname>wcf\system\event\listener\HaUserGroupManageMemberListPageListener</listenerclassname>
-			</eventlistener>
+		<eventlistener name="moderatedUserGroupListPageListener">
+			<eventclassname>wcf\page\ModeratedUserGroupListPage</eventclassname>
+			<eventname>afterInitObjectList</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\HaModeratedUserGroupListPageListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="userGroupManageMemberListPageListener">
+			<eventclassname>wcf\page\UserGroupManageMemberListPage</eventclassname>
+			<eventname>afterInitObjectList</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\HaUserGroupManageMemberListPageListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="userGroupListPageListener">
+			<eventclassname>wcf\page\UserGroupListPage</eventclassname>
+			<eventname>afterInitObjectList</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\HaUserGroupListPageListener</listenerclassname>
+		</eventlistener>
     </import>
 </data>
