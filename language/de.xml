@@ -4,5 +4,6 @@
 		<item name="wcf.moderated.hanashi.submit"><![CDATA[Suchen]]></item>
 		<item name="wcf.moderated.hanashi.haGroupName"><![CDATA[Gruppe suchen...]]></item>
 		<item name="wcf.moderated.hanashi.haMemberName"><![CDATA[Mitglieder suchen...]]></item>
+		<item name="wcf.moderated.hanashi.noResult"><![CDATA[Es wurde kein Ergebnis gefunden.]]></item>
 	</category>
 </language>

@@ -3,7 +3,7 @@
     <import>
 		<eventlistener name="moderatedUserGroupListPageListener">
 			<eventclassname>wcf\page\ModeratedUserGroupListPage</eventclassname>
-			<eventname>afterInitObjectList</eventname>
+			<eventname>afterInitObjectList,countItems</eventname>
 			<environment>user</environment>
 			<inherit>1</inherit>
 			<listenerclassname>wcf\system\event\listener\HaModeratedUserGroupListPageListener</listenerclassname>
@@ -17,7 +17,7 @@
 		</eventlistener>
 		<eventlistener name="userGroupListPageListener">
 			<eventclassname>wcf\page\UserGroupListPage</eventclassname>
-			<eventname>afterInitObjectList</eventname>
+			<eventname>afterInitObjectList,countItems</eventname>
 			<environment>user</environment>
 			<inherit>1</inherit>
 			<listenerclassname>wcf\system\event\listener\HaUserGroupListPageListener</listenerclassname>
