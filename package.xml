@@ -3,8 +3,8 @@
     <packageinformation>
         <packagename><![CDATA[Gruppenfinder]]></packagename>
         <packagedescription><![CDATA[Gruppenfinder.]]></packagedescription>
-        <version>1.0.0</version>
-        <date>2019-01-18</date>
+        <version>1.0.1</version>
+        <date>2019-12-10</date>
     </packageinformation>
 
     <authorinformation>
@@ -17,13 +17,9 @@
 	</compatibility>
 
     <requiredpackages>
-        <requiredpackage minversion="3.1.7">com.woltlab.wcf</requiredpackage>
-        <requiredpackage minversion="3.1.5">com.woltlab.wcf.moderatedUserGroup</requiredpackage>
+        <requiredpackage minversion="3.1.0">com.woltlab.wcf</requiredpackage>
+        <requiredpackage minversion="3.1.0">com.woltlab.wcf.moderatedUserGroup</requiredpackage>
     </requiredpackages>
-	
-	<excludedpackages>
-        <excludedpackage version="3.2.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-    </excludedpackages>
 
     <instructions type="install">
 		<!-- files -->
@@ -39,4 +35,9 @@
         <instruction type="eventListener" />
 		<instruction type="templateListener" />
     </instructions>
+	
+	<instructions type="update" fromversion="1.0.0">
+		<!-- files -->
+        <instruction type="file" />
+	</instructions>
 </package>
