@@ -11,7 +11,7 @@ class HaUserGroupManageMemberListPageListener implements IParameterizedEventList
         if (isset($_POST['haMemberName'])) {
             $eventObj->objectList->getConditionBuilder()->add(
                 'user_table.username LIKE ?',
-                ['%' . $_POST['haMemberName'] . '%']
+                ['%' . WCF::getDB()->escapeLikeValue($_POST['haMemberName']) . '%']
             );
 
             WCF::getSession()->register('haMemberName', $_POST['haMemberName']);
@@ -24,7 +24,7 @@ class HaUserGroupManageMemberListPageListener implements IParameterizedEventList
 
             $eventObj->objectList->getConditionBuilder()->add(
                 'user_table.username LIKE ?',
-                ['%' . $haMemberName . '%']
+                ['%' . WCF::getDB()->escapeLikeValue($haMemberName) . '%']
             );
 
             WCF::getTpl()->assign([

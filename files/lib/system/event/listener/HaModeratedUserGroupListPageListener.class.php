@@ -14,7 +14,7 @@ class HaModeratedUserGroupListPageListener implements IParameterizedEventListene
             if (isset($_POST['haGroupName'])) {
                 $eventObj->objectList->getConditionBuilder()->add(
                     'user_group.groupName LIKE ?',
-                    ['%' . $_POST['haGroupName'] . '%']
+                    ['%' . WCF::getDB()->escapeLikeValue($_POST['haGroupName']) . '%']
                 );
 
                 WCF::getSession()->register('haGroupName', $_POST['haGroupName']);
@@ -27,7 +27,7 @@ class HaModeratedUserGroupListPageListener implements IParameterizedEventListene
 
                 $eventObj->objectList->getConditionBuilder()->add(
                     'user_group.groupName LIKE ?',
-                    ['%' . $haGroupName . '%']
+                    ['%' . WCF::getDB()->escapeLikeValue($haGroupName) . '%']
                 );
 
                 WCF::getTpl()->assign([
