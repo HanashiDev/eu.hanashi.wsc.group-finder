@@ -4,9 +4,9 @@ namespace wcf\system\event\listener;
 
 use wcf\system\WCF;
 
-final class HaUserGroupManageMemberListPageListener implements IParameterizedEventListener
+final class HaUserGroupManageMemberListPageListener extends AbstractEventListener
 {
-    public function execute($eventObj, $className, $eventName, array &$parameters)
+    protected function onAfterInitObjectList($eventObj)
     {
         if (isset($_POST['haMemberName'])) {
             $eventObj->objectList->getConditionBuilder()->add(
