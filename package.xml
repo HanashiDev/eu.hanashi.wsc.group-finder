@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="eu.hanashi.wsc.group-finder" xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/vortex/package.xsd">
-    <packageinformation>
-        <packagename><![CDATA[Gruppenfinder]]></packagename>
-        <packagedescription><![CDATA[Gruppenfinder.]]></packagedescription>
-        <version>1.0.1</version>
-        <date>2019-12-10</date>
-    </packageinformation>
-
-    <authorinformation>
-        <author><![CDATA[Hanashi]]></author>
-        <authorurl><![CDATA[https://hanashi.eu/]]></authorurl>
-    </authorinformation>
-	
-	<compatibility>
-		<api version="2018" />
-	</compatibility>
-
-    <requiredpackages>
-        <requiredpackage minversion="3.1.0">com.woltlab.wcf</requiredpackage>
-        <requiredpackage minversion="3.1.0">com.woltlab.wcf.moderatedUserGroup</requiredpackage>
-    </requiredpackages>
-
-    <instructions type="install">
-		<!-- files -->
-        <instruction type="file" />
-		
-		<!-- templates -->
-		<instruction type="template" />
-		
-		<!-- language -->
-        <instruction type="language"/>
-		
-		<!-- listener -->
-        <instruction type="eventListener" />
-		<instruction type="templateListener" />
-    </instructions>
-	
-	<instructions type="update" fromversion="1.0.0">
-		<!-- files -->
-        <instruction type="file" />
+<package xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/package.xsd" name="eu.hanashi.wsc.group-finder">
+	<packageinformation>
+		<!-- eu.hanashi.wsc.group-finder -->
+		<packagename>Gruppenfinder</packagename>
+		<packagedescription>Gruppenfinder.</packagedescription>
+		<version>1.1.0</version>
+		<date>2024-10-19</date>
+	</packageinformation>
+	<authorinformation>
+		<author>Hanashi Development</author>
+		<authorurl>https://hanashi.dev/</authorurl>
+	</authorinformation>
+	<requiredpackages>
+		<requiredpackage minversion="6.0.18">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="6.0.3">com.woltlab.wcf.moderatedUserGroup</requiredpackage>
+	</requiredpackages>
+	<excludedpackages>
+		<excludedpackage version="6.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+	<instructions type="install">
+		<instruction type="file"/>
+		<instruction type="template"/>
+		<instruction type="language"/>
+		<instruction type="eventListener"/>
+		<instruction type="templateListener"/>
+	</instructions>
+	<instructions type="update" fromversion="1.0.*">
+		<instruction type="file"/>
 	</instructions>
 </package>
