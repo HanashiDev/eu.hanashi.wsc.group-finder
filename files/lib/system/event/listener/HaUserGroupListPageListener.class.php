@@ -6,7 +6,7 @@ use wcf\system\request\LinkHandler;
 use wcf\system\WCF;
 use wcf\util\HeaderUtil;
 
-class HaUserGroupListPageListener implements IParameterizedEventListener
+final class HaUserGroupListPageListener implements IParameterizedEventListener
 {
     public function execute($eventObj, $className, $eventName, array &$parameters)
     {

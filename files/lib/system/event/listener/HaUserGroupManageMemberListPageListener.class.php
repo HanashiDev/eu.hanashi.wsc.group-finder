@@ -4,7 +4,7 @@ namespace wcf\system\event\listener;
 
 use wcf\system\WCF;
 
-class HaUserGroupManageMemberListPageListener implements IParameterizedEventListener
+final class HaUserGroupManageMemberListPageListener implements IParameterizedEventListener
 {
     public function execute($eventObj, $className, $eventName, array &$parameters)
     {
